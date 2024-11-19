@@ -1,11 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar de Baja Usuario</title>
-    <!-- CSS Estático -->
-    <link rel="stylesheet" th:href="@{/static/css/styles.css}">
+    <!-- CSS EstÃ¡tico -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
@@ -22,32 +24,32 @@
     <div class="container" style="width: 400px; margin-top: 50px;">
         <h3 class="text-center mb-4"><b>Dar de Baja</b></h3>
 
-        <!-- Formulario de eliminación de club -->
+        <!-- Formulario de eliminaciÃ³n de club -->
         <form id="deleteForm">
             <!-- Nombre de club o correo -->
             <div class="mb-3">
                 <input type="text" id="deleteUsername" class="form-control" placeholder="Introduce nombre club o email" required>
             </div>
 
-            <!-- Contraseña -->
+            <!-- ContraseÃ±a -->
             <div class="mb-3">
-                <input type="password" id="deletePassword" class="form-control" placeholder="Introduce la contraseña" required>
+                <input type="password" id="deletePassword" class="form-control" placeholder="Introduce la contraseÃ±a" required>
             </div>
 
-            <!-- Botón de confirmación -->
+            <!-- BotÃ³n de confirmaciÃ³n -->
             <button type="submit" class="btn btn-dark w-100">Confirmar Baja</button>
         </form>
 
         <!-- Enlaces adicionales -->
         <div class="text-center mt-3">
-            <p><a th:href="@{/index}">Volver al menú</a></p>
+            <p><a href="index.jsp">Volver al menú</a></p>
         </div>
 
         <!-- Contenedor de mensajes de resultado -->
         <div id="result" class="text-center mt-3 text-danger"></div>
     </div>
 
-    <!-- JavaScript Estático -->
-    <script th:src="@{/static/javaScript/main.js}" type="module"></script>
+    <!-- JavaScript EstÃ¡tico -->
+    <script src="javaScript/main.js" type="module"></script>
 </body>
 </html>

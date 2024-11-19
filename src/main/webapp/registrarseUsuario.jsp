@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar de Alta Usuario</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
@@ -48,14 +50,14 @@
 
         <!-- Enlaces adicionales -->
         <div class="text-center mt-3">
-            <p>¿Ya estas registrado? <a href="../templates/iniciarSesionUsuario.html">Iniciar Sesión</a></p>
-            <p><a href="../templates/index.html">Volver al menú</a></p>
+            <p>¿Ya estas registrado? <a href="iniciarSesionUsuario.jsp">Iniciar Sesión</a></p>
+            <p><a href="index.jsp">Volver al menú</a></p>
         </div>
 
         <!-- Contenedor de mensajes de resultado -->
         <div id="result" class="text-center mt-3 text-danger"></div>
     </div>
-    <script src="../static/javaScript/main.js"></script>
+    <script src="javaScript/main.js"></script>
 </body>
 
 </html>

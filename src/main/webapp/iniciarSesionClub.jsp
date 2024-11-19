@@ -1,11 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión Usuario</title>
+    <title>Iniciar Sesión Club</title>
     <!-- Enlace a estilos CSS -->
-    <link rel="stylesheet" th:href="@{/static/css/styles.css}">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
@@ -19,28 +21,28 @@
 </head>
 <body>
     <div class="container" style="width: 400px; margin-top: 50px;">
-        <h3 class="text-center mb-4"><b>Iniciar Sesión Usuario</b></h3>
+        <h3 class="text-center mb-4"><b>Iniciar Sesión Club</b></h3>
 
-        <!-- Formulario de inicio de sesión -->
+        <!-- Formulario de inicio de sesiÃ³n -->
         <form id="loginForm">
             <!-- Nombre de club o correo -->
             <div class="mb-3">
-                <input type="text" id="loginUsername" class="form-control" placeholder="Nombre usuario o correo" required>
+                <input type="text" id="loginUsername" class="form-control" placeholder="Nombre club o correo" required>
             </div>
 
-            <!-- Contraseña -->
+            <!-- ContraseÃ±a -->
             <div class="mb-3">
                 <input type="password" id="loginPassword" class="form-control" placeholder="Introduce la contraseña" required>
             </div>
 
-            <!-- Botón de iniciar sesión -->
+            <!-- BotÃ³n de iniciar sesiÃ³n -->
             <button type="submit" class="btn btn-dark w-100">Iniciar Sesión</button>
         </form>
 
         <!-- Enlaces adicionales -->
         <div class="text-center mt-3">
-            <p>¿Tienes un club no registrado? <a th:href="@{/registrarseUsuario}">Registrarse</a></p>
-            <p><a th:href="@{/index}">Volver al menú</a></p>
+            <p>¿Tienes un club no registrado? <a href="registrarseClub.jsp">Registrarse</a></p>
+            <p><a href="index.jsp">Volver al menú</a></p>
         </div>
 
         <!-- Contenedor para mostrar mensajes de resultado -->
@@ -48,6 +50,6 @@
     </div>
 
     <!-- Incluyendo el archivo de JavaScript -->
-    <script th:src="@{/static/javaScript/main.js}" type="module"></script>
+    <script src="javaScript/main.js" type="module"></script>
 </body>
 </html>

@@ -1,29 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title th:text="#{motorRidingClub.titulo}">Motor Riding Club</title>
-    <!-- CSS Estático -->
-    <link rel="stylesheet" th:href="@{/static/css/index.css}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Motor Riding Club</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img th:src="@{/static/imagenes/logo%moto.jpg}" alt="Yamaha Logo" width="100" height="50">
+                <img src="imagenes/logo moto.jpg" alt="Yamaha Logo" width="100" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" th:href="@{/menuAdministrador}">Administrador</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
@@ -36,8 +35,8 @@
                             Iniciar Sesion
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a class="dropdown-item" th:href="@{/iniciarsesionUsuario}">Usuario</a></li>
-                            <li><a class="dropdown-item" th:href="@{/iniciarsesionClub}">Club</a></li>
+                            <li><a class="dropdown-item" href="iniciarSesionUsuario.jsp">Usuario</a></li>
+                            <li><a class="dropdown-item" href="iniciarSesionClub.jsp">Club</a></li>
                         </ul>
                     </li>
                     <!-- Dropdown 2 -->
@@ -46,8 +45,8 @@
                             Registrarse
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><a class="dropdown-item" th:href="@{/registrarseUsuario}">Usuario</a></li>
-                            <li><a class="dropdown-item" th:href="@{/registrarseClub}">Club</a></li>
+                            <li><a class="dropdown-item" href="registrarseUsuario.jsp">Usuario</a></li>
+                            <li><a class="dropdown-item" href="registrarseUsuario.jsp">Club</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -57,11 +56,12 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <img alt="Motorcycle Riders on Track" height="1080" th:src="@{/static/imagenes/rodada.jpg}" width="1920"/>
+        <img alt="Motorcycle Riders on Track" height="1080" src="imagenes/rodada.jpg" width="1920"/>
         <div class="logo">
             <div class="welcome">¡Mas de 10 000 km recorridos juntos!</div>
         </div>
     </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

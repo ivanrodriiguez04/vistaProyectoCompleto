@@ -1,10 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar de Alta Club</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
@@ -42,14 +44,14 @@
                 <input type="password" id="registerConfirmPassword" class="form-control" placeholder="Repetir contraseña" required>
             </div>
 
-            <!-- Botón de registro -->
+            <!-- BotÃ³n de registro -->
             <button type="submit" class="btn btn-dark w-100">Registrarse</button>
         </form>
 
         <!-- Enlaces adicionales -->
         <div class="text-center mt-3">
-            <p>¿Tienes un club? <a href="../templates/iniciarSesionClub.html">Iniciar Sesión</a></p>
-            <p><a href="../templates/index.html">Volver al menú</a></p>
+            <p>¿Tienes un club? <a href="iniciarSesionClub.jsp">Iniciar Sesión</a></p>
+            <p><a href="index.jsp">Volver al menú</a></p>
         </div>
 
         <!-- Contenedor de mensajes de resultado -->
@@ -58,6 +60,6 @@
     </div>
 
     <!-- Incluyendo el archivo de JavaScript -->
-    <script src="../static/javaScript/main.js"></script>
+    <script src="javaScript/main.js"></script>
 </body>
 </html>

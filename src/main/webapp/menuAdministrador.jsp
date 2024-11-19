@@ -1,10 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador - Motor Riding Club</title>
-    <link rel="stylesheet" href="../static/css/administrador.css">
+    <link rel="stylesheet" href="css/administrador.css">
     <link 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         rel="stylesheet">
@@ -13,7 +15,7 @@
     <div class="admin-container">
         <!-- Barra de navegación con enlace para regresar -->
         <nav class="navbar navbar-light">
-            <p><a href="../templates/index.html">← Volver</a></p>
+            <p><a href="index.jsp">← Volver</a></p>
         </nav>
         
         <h1>Panel de Administrador</h1>
@@ -64,6 +66,6 @@
     </div>
 
     <!-- Vinculación con el archivo de JS -->
-    <script src="../static/javaScript/main.js"></script>
+    <script src="javaScript/main.js"></script>
 </body>
 </html>
